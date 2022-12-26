@@ -475,18 +475,18 @@ static void zmk_rgb_underglow_effect_battery() {
     struct led_rgb rgb;
     if (soc > 80) {
         rgb.r = 0;
-        rgb.g = 64;  // was 255;
+        rgb.g = 32;  // was 255;
         rgb.b = 0;
     } else if (soc > 50 && soc < 80) {
-        rgb.r = 64;  // 255;
-        rgb.g = 64;  // 255;
+        rgb.r = 32;  // 255;
+        rgb.g = 32;  // 255;
         rgb.b = 0;
     } else if (soc > 20 && soc < 51) {
-        rgb.r = 64;  // 255;
-        rgb.g = 35;  // 140;
+        rgb.r = 32;  // 255;
+        rgb.g = 17;  // 140;
         rgb.b = 0;
     } else {
-        rgb.r = 64;  // 255;
+        rgb.r = 32;  // 255;
         rgb.g = 0;
         rgb.b = 0;
     }
